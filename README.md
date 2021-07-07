@@ -201,7 +201,7 @@ dags
 ├── script_dags                                     # folder to locate script which referred by `dags` script
 │   ├── simple_to_s3.py                             # script to upload file to S3 in a simple way
 │   ├── clean_input_s3.py                           # script to do clean in both local and s3 for the next run 
-│   └── crawl_to_local.py                           # script to craw different data from serveral sources.
+│   └── crawl_to_local.py                           # script to craw different data from several sources.
 └── data                                            # folder to locate complementary data
     └── stage_covids_complement.csv                 # csv data to complement unreported zero covid cases.
 ```
