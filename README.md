@@ -186,25 +186,24 @@ This project takes use of `Airflow` to do data pipeline. Because the trip histor
 
 ```
 dags
-├── udac_capstone_emr.py
-├── README.md
-├── bks_aws.cfg
-├── requirements.txt
-├── images
-│   ├── citi bike trip star schema.png
-│   ├── airflow pipline.png
-│   └── airflow_connection.png
-├── script_emr
-│   ├── spark_elt_emr.py
-│   └── spark_check_emr.py
-├── script_operator
-│   └── operator_data_upload.py
-├── script_dags
-│   ├── simple_to_s3.py
-│   ├── clean_input_s3.py
-│   └── crawl_to_local.py
-└── data
-    └── stage_covids_complement.csv
+├── udac_capstone_emr.py                            # The data pipeline dag used in `Airflow`
+├── bks_aws.cfg                                     # basic config of the project, need to set [MAIN_PATH] befor first run
+├── requirements.txt                                # required python package to run the project
+├── images                                          # folder to locate images used in README.md
+│   ├── citi bike trip star schema.png              # picture of citi bike trip star schema
+│   ├── airflow pipline.png                         # picture of airflow pipline
+│   └── airflow_connection.png                      # picture of airflow_connection
+├── script_emr                                      # foler to locate python scripts which would run in `Amazon EMR`
+│   ├── spark_elt_emr.py                            # spark elt script for the project
+│   └── spark_check_emr.py                          # spark data qulity validation for the project 
+├── script_operator                                 # folder to locate self made operator
+│   └── operator_data_upload.py                     # operator used to upload data from local to S3
+├── script_dags                                     # folder to locate script which referred by `dags` script
+│   ├── simple_to_s3.py                             # script to upload file to S3 in a simple way
+│   ├── clean_input_s3.py                           # script to do clean in both local and s3 for the next run 
+│   └── crawl_to_local.py                           # script to craw different data from serveral sources.
+└── data                                            # folder to locate complementary data
+    └── stage_covids_complement.csv                 # csv data to complement unreported zero covid cases.
 ```
 
 #### usage
