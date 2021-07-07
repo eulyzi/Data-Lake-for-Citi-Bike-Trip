@@ -192,7 +192,7 @@ dags
 ├── images                                          # folder to locate images used in README.md
 │   ├── citi bike trip star schema.png              # picture of citi bike trip star schema
 │   ├── airflow pipline.png                         # picture of airflow pipline
-│   └── airflow_connection.png                      # picture of airflow_connection
+│   └── airflow_connection.png                      # picture of airflow connection
 ├── script_emr                                      # foler to locate python scripts which would run in `Amazon EMR`
 │   ├── spark_elt_emr.py                            # spark elt script for the project
 │   └── spark_check_emr.py                          # spark data qulity validation for the project 
