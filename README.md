@@ -187,7 +187,7 @@ This project takes use of `Airflow` to do data pipeline. Because the trip histor
 ```
 dags
 ├── udac_capstone_emr.py                            # The data pipeline dag used in `Airflow`
-├── bks_aws.cfg                                     # basic config of the project, need to set [MAIN_PATH] befor first run
+├── bks_aws.cfg                                     # basic config of the project, need to set [MAIN_PATH] before first run
 ├── requirements.txt                                # required python package to run the project
 ├── images                                          # folder to locate images used in README.md
 │   ├── citi bike trip star schema.png              # picture of citi bike trip star schema
